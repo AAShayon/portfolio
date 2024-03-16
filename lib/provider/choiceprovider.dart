@@ -6,9 +6,6 @@ class MyChoiceProvider with ChangeNotifier {
 
   List<MySubject> get mySubject => _mySublist;
 
-  // void addList(String subjectName,String result){
-  //   _mySublist.add(MySubject(subjectName: subjectName, result: result));
-  // }
   void addList(String subname, String res) {
     _mySublist.add(MySubject(subjectName: subname, result: res));
     notifyListeners();
